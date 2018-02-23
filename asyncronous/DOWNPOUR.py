@@ -38,8 +38,8 @@ n_classes = 10 # MNIST total classes (0-9 digits)
 # tf.train.ClusterSpec({"local": ["localhost:2222", "localhost:2223"]})
 
 config=tf.ConfigProto(log_device_placement=True)
-config.gpu_options.allow_growth = True
-config.gpu_options.visible_device_list = "0, 1"
+#config.gpu_options.allow_growth = True
+#config.gpu_options.visible_device_list = "0, 1"
 
 # tf Graph input
 X = tf.placeholder("float", [None, n_input])
